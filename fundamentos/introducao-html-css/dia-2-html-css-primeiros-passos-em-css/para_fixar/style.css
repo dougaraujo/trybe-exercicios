@@ -1,0 +1,25 @@
+.list_item {
+    background-color: black;
+}
+.to_modify_color {
+    background-color: blueviolet;
+}
+body {
+    font-size: 16px;
+}
+h1 {
+    font-family: sans-serif;
+    font-style: oblique;
+    line-height: 20%;
+    text-align: center;
+    text-decoration: line-through;
+    color: orange;
+    font-size: 65px;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+ul {
+    background-color: blue;
+}
