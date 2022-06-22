@@ -6,5 +6,7 @@ for (let index = 0; index < numbers.length; index += 1) {
     sum += numbers[index];
 }
 
-console.log(sum);
+let mediaAritmetica = sum / numbers.length;
+
+console.log(mediaAritmetica);
 
