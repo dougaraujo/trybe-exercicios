@@ -8,5 +8,9 @@ for (let index = 0; index < numbers.length; index += 1) {
 
 let mediaAritmetica = sum / numbers.length;
 
-console.log(mediaAritmetica);
+if (mediaAritmetica <= 20) {
+    console.log('Valor menor ou igual a 20');
+} else {
+    console.log('Valor maior que 20');
+}
 
