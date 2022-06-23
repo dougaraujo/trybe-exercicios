@@ -2,10 +2,9 @@ const a = 15;
 
 const b = 58;
 
-let sum = a + b;
-let sub = a - b;
-let product = a * b;
-let division = a / b;
-let left = a % b;
+let biggest;
 
-console.log(sum, sub, product, division,left);
+if (a > b) biggest = a;
+if (a < b) biggest = b;
+
+console.log(biggest);
