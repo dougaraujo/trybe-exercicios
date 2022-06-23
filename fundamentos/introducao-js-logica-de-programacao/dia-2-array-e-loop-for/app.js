@@ -1,7 +1,13 @@
 let output = [];
 
-for (let index = 1; index <= 25; index += 1) {
-  output.push(index);
+for (let indexOutput= 1; indexOutput <= 25; indexOutput += 1) {
+  output.push(indexOutput);
 }
 
-console.log(output);
+let halfValue = [];
+
+for (let indexHalfValue = 0; indexHalfValue < output.length; indexHalfValue++) {
+  halfValue.push(output[indexHalfValue] / 2);
+}
+
+console.log(halfValue);
