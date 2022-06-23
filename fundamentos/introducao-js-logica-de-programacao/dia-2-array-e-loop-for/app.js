@@ -1,7 +1,7 @@
 let output = [];
 
-for (let indexOutput= 1; indexOutput <= 25; indexOutput += 1) {
-  output.push(indexOutput);
+for (let indexOutput= 0; indexOutput <= 24; indexOutput += 1) {
+  output.push(indexOutput + 1);
 }
 
 let halfValue = [];
