@@ -1,13 +1,13 @@
-let output = [];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (let indexOutput= 0; indexOutput <= 24; indexOutput += 1) {
-  output.push(indexOutput + 1);
+for (indexA = 1; indexA < numbers.length; indexA++) {
+  for (indexB = 0; indexB < indexA; indexB++) {
+    if (numbers[indexB] > numbers[indexA]) {
+      let swap = numbers[indexB];
+      numbers[indexB] = numbers[indexA];
+      numbers[indexA] = swap;
+    }
+  }
 }
 
-let halfValue = [];
-
-for (let indexHalfValue = 0; indexHalfValue < output.length; indexHalfValue++) {
-  halfValue.push(output[indexHalfValue] / 2);
-}
-
-console.log(halfValue);
+console.log(numbers);
