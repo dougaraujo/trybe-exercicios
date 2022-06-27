@@ -1,9 +1,9 @@
-const numb1 = 4;
-const numb2 = 54;
-const numb3 = 132;
+const costValue = 30;
+const sellValue = 75;
+const taxes = 0.2;
+const totalCostValue = costValue + costValue * taxes;
 
-if (numb1 % 2 !== 0 || numb2 % 2 !== 0 || numb3 % 2 !== 0) {
-    console.log('true');
-} else {
-    console.log('false');
-}
+let profit = 1000 * (sellValue - totalCostValue);
+
+console.log('--- Lucro em Mil Vendas ---');
+console.log('R$', profit);
