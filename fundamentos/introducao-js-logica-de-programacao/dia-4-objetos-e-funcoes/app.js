@@ -15,3 +15,7 @@ console.log(infos);
 for ( info in infos ) {
     console.log(info);
 }
+
+for (info in infos) {
+    console.log(infos[info]);
+}
