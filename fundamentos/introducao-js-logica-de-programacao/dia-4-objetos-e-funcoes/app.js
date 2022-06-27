@@ -1,4 +1,4 @@
-/*let infos = {
+let infos = {
   personagem: "Margarida",
   origem: "Pato Donald",
   nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
@@ -33,7 +33,7 @@ for (key in infos) {
   } else {
     console.log(infos[key], "e", infos2[key]);
   }
-}*/
+}
 
 let leitor = {
   nome: "Julia",
@@ -66,6 +66,9 @@ leitor.livrosFavoritos.push(newFavoriteBook);
 
 console.log(leitor);
 
-console.log(leitor.nome, 'tem', leitor.livrosFavoritos.length, 'livros favoritos');
-
-
+console.log(
+  leitor.nome,
+  "tem",
+  leitor.livrosFavoritos.length,
+  "livros favoritos"
+);
