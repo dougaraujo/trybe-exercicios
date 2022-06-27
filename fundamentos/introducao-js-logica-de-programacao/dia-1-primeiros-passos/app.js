@@ -1,7 +1,9 @@
-const a = 53;
-const b = 48;
-const c = 74;
+const a = 0;
 
-let biggestNumber = Math.max(a, b, c);
-
-console.log(biggestNumber);
+if (a > 0) {
+    console.log('Positive');
+} else if (a < 0) {
+    console.log('Negative');
+} else {
+    console.log('Zero');
+}
