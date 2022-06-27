@@ -1,10 +1,7 @@
-const a = 15;
+const a = 53;
+const b = 48;
+const c = 74;
 
-const b = 58;
+let biggestNumber = Math.max(a, b, c);
 
-let biggest;
-
-if (a > b) biggest = a;
-if (a < b) biggest = b;
-
-console.log(biggest);
+console.log(biggestNumber);
