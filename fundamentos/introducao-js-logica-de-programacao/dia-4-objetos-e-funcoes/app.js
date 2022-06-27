@@ -65,3 +65,7 @@ let newFavoriteBook = {
 leitor.livrosFavoritos.push(newFavoriteBook);
 
 console.log(leitor);
+
+console.log(leitor.nome, 'tem', leitor.livrosFavoritos.length, 'livros favoritos');
+
+
