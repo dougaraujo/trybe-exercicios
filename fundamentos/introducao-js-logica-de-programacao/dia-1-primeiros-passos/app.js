@@ -1,25 +1,9 @@
-let porcentagem = 55;
+const numb1 = 45;
+const numb2 = 55;
+const numb3 = 13;
 
-let nota = "";
-
-if (porcentagem < 0 || porcentagem > 100) {
-  console.log("error: valor percentual incorreto.");
-} else if (porcentagem >= 90) {
-  nota = "A";
-  console.log("Sua Nota ==>", nota);
-} else if (porcentagem >= 80) {
-  nota = "B";
-  console.log("Sua Nota ==>", nota);
-} else if (porcentagem >= 70) {
-  nota = "C";
-  console.log("Sua Nota ==>", nota);
-} else if (porcentagem >= 60) {
-  nota = "D";
-  console.log("Sua Nota ==>", nota);
-} else if (porcentagem >= 50) {
-  nota = "E";
-  console.log("Sua Nota ==>", nota);
-} else if (porcentagem < 50) {
-  nota = "F";
-  console.log("Sua Nota ==>", nota);
+if (numb1 % 2 === 0 || numb2 % 2 === 0 || numb3 % 2 === 0) {
+    console.log('true');
+} else {
+    console.log('false');
 }
