@@ -20,11 +20,19 @@ for (info in infos) {
   console.log(infos[info]);
 }
 
-infos2 = Object.assign(infos);
+let infos2 = {
+  personagem: "Tio Patinhas",
+  origem: "Christmas on Ber Mountain, Dell's Four Color Comics \#178\ .",
+  nota: "O último MacPatinhas",
+  recorrente: "Sim",
+};
 
-infos2.personagem = "Tio Patinhas";
-infos2.origem = "Christmas on Ber Mountain, Dell's Four Color Comics \#178\ .";
-infos2.nota = "O último MacPatinhas";
-infos2.recorrente = "Sim";
+for (key in infos) {
+  if (key === "recorrente") {
+    console.log("Ambos recorrentes");
+  } else {
+    console.log(infos[key], "e", infos2[key]);
+  }
+}
 
-console.log(infos2);
+
