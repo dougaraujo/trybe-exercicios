@@ -1,4 +1,4 @@
-const salarioBruto = 887.59;
+const salarioBruto = 2187.59;
 
 let impostoSeguroSocial;
 let impostoDeRenda;
@@ -31,8 +31,10 @@ if (salarioBruto <= 1903.98) {
   deducaoImpostoDeRenda = 869.36;
 }
 
-let salarioBase = salarioBruto - (salarioBruto * impostoSeguroSocial);
+let salarioBase = salarioBruto - salarioBruto * impostoSeguroSocial;
 
-let salarioLiquido = salarioBase - (salarioBase * impostoDeRenda - deducaoImpostoDeRenda);
+let salarioLiquido =
+  salarioBase - (salarioBase * impostoDeRenda - deducaoImpostoDeRenda);
 
-console.log(salarioLiquido.toFixed(2));
+console.log("---- Seu Salário Líquido ----");
+console.log("R$", salarioLiquido.toFixed(2));
