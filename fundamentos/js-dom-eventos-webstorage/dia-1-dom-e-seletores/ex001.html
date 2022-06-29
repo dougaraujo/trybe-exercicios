@@ -61,6 +61,18 @@
         "Trablhando no exterior, e aprendendo cada vez mais sobre JS.";
       const conteudoPrincipal = document.getElementsByClassName("main-content");
       conteudoPrincipal[0].style.backgroundColor = "rgb(76,164,109)";
+      const conteudoCentral = document.getElementsByClassName("center-content");
+      conteudoCentral[0].style.backgroundColor = "white";
+      const titulo= document.getElementsByClassName("title");
+      titulo[0].innerHTML = "Exercício 5.1 - JavaScript";
+
+      const paragrafosMaiusculos = document.getElementsByTagName('p');
+      for (index in paragrafosMaiusculos) {
+        paragrafosMaiusculos[index].style.textTransform = 'uppercase';
+        console.log(paragrafosMaiusculos[index].innerHTML);
+      }
+      
+      
     </script>
   </body>
 </html>
