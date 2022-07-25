@@ -1,45 +1,48 @@
+const order = {
+    name: 'Rafael Andrade',
+    phoneNumber: '11-98763-1416',
+    address: {
+      street: 'Rua das Flores',
+      number: '389',
+      apartment: '701',
+    },
+    order: {
+      pizza: {
+        marguerita: {
+          amount: 1,
+          price: 25,
+        },
+        pepperoni: {
+          amount: 1,
+          price: 20,
+        }
+      },
+      drinks: {
+        coke: {
+          type: 'Coca-Cola Zero',
+          price: 10,
+          amount: 1,
+        }
+      },
+      delivery: {
+        deliveryPerson: 'Ana Silveira',
+        price: 5,
+      }
+    },
+    payment: {
+      total: 60,
+    },
+  };
+  
+  const customerInfo = (order) => `Olá ${order.order.delivery.deliveryPerson}, entrega para ${order.name}, Telefone: ${order.phoneNumber}. R.${order.address.street}, Nº ${order.address.number}, AP: ${order.address.apartment}`;
 
-const verifyEmptyInput = () => {
-  let valor1 = document.getElementById("value1").value;
-  let valor2 = document.getElementById("value2").value;
-  if (valor1 === "" || valor2 === "") {
-    throw new Error("Os valores não podem estar em branco!");
+  console.log(customerInfo(order));
+  
+  const orderModifier = (order) => {
+    const pizzas = Object.keys(order.order.pizza);
+    order.name = 'Luiz Silva';
+    order.payment.total = 50;
+    return `Olá ${order.name}, o total do seu pedido de ${pizzas[0]}, ${pizzas[1]} e ${order.order.drinks.coke.type} é R$${order.payment.total.toFixed(2)}.`
   }
-};
-
-const verifyIsNan = () => {
-  let valor1 = document.getElementById("value1").value;
-  let valor2 = document.getElementById("value2").value;
-  if (isNaN(valor1) || isNaN(valor2)) {
-    throw new Error("Os valores inseridos devem ser numéricos!");
-  }
-};
-
-function sum() {
-  try {
-    verifyIsNan();
-    verifyEmptyInput();
-    const value1 = document.getElementById("value1").value;
-    const value2 = document.getElementById("value2").value;
-    const result = Number(value1) + Number(value2);
-    document.getElementById("result").innerHTML = `Resultado: ${result}`;
-  } catch (error) {
-    document.getElementById("result").innerHTML = error.message;
-  } finally {
-    document.getElementById("value1").value = "";
-    document.getElementById("value2").value = "";
-  }
-
-//   try {
-//     Attempt to execute this code
-//   } catch (exception) {
-//     This code handles exceptions
-//   } finally {
-//     This code always gets executed
-//   }
-}
-
-window.onload = () => {
-  const button = document.getElementById("button");
-  button.addEventListener("click", sum);
-};
+  
+  console.log(orderModifier(order));
